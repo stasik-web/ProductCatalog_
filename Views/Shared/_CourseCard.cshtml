@@ -1,0 +1,12 @@
+@model ProductCatalog.Models.Course
+
+<div class="card h-100 shadow-sm">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">@Model.Title</h5>
+    </div>
+    <div class="card-body">
+        <p class="mb-1"><strong>ID:</strong> @Model.Id</p>
+        <p class="mb-1"><strong>Кредит:</strong> @Model.Credits</p>
+        <p class="mb-0"><strong>Оқытушы:</strong> @Model.Instructor</p>
+    </div>
+</div>

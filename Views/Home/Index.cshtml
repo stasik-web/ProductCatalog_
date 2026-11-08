@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Басты бет";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3">
+    <h1 class="display-5">@ViewBag.Message</h1>
+    <p class="lead">Razor, Strongly Typed View, Layout және Partial View негізінде жасалған веб-қосымша.</p>
+    <a class="btn btn-primary" asp-controller="Product" asp-action="Index">Тауарлар каталогы</a>
+    <a class="btn btn-outline-primary" asp-controller="Course" asp-action="List">Курстар тізімі</a>
+</div>

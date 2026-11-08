@@ -1,0 +1,16 @@
+@model List<ProductCatalog.Models.Course>
+
+@{
+    ViewData["Title"] = "Курстар тізімі";
+}
+
+<h2 class="mb-4">Курстар тізімі</h2>
+
+<div class="row g-3">
+    @foreach (var course in Model)
+    {
+        <div class="col-md-6 col-lg-4">
+            <partial name="_CourseCard" model="course" />
+        </div>
+    }
+</div>
